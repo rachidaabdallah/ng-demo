@@ -1,0 +1,32 @@
+
+
+<div class="container text-white">
+
+<p class="text-center">demo-list works !</p>
+
+  <h2 class="mt-5 mb-4">Choisissez le montant</h2>
+  <div class="col-md-5 mb-2 ">
+    <button (click)="makePayment(5)" class="btn btn-danger btn-block">Donner 5€</button>
+  </div>
+  <div class="col-md-5 mb-2">
+    <button (click)="makePayment(10)" class="btn btn-primary btn-block">Donner 10€</button>
+  </div>
+  <div class="col-md-5">
+    <button (click)="makePayment(15)" class="btn btn-success btn-block">Donner 15€</button>
+  </div>
+
+
+<h2 class="mb-3 mt-5 ">Vous souhaitez donner plus</h2>
+
+<p class="font-weight-bold">mettre un clavier numerique et le btn ok pour ouvrire la page de paiement </p>
+
+  <select [(ngModel)]="chosenObjet" class="form-control">
+    <option *ngFor="let data of Data" [ngValue]="data">
+      {{ data.name }}
+    </option>
+  </select>
+  <div class="d-flex mt-5">
+    {{ chosenObjet | json }}
+  </div>
+</div>
+
