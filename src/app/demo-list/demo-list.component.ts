@@ -42,7 +42,7 @@ payement_testing: any = null;
 
         console.log(stripeToken);
 
-        alert('Stripe fake paiemeent ok ');
+        alert('Stripe fake paiement ok ');
 
       },
 
