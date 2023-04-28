@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DemoListComponent } from './demo-list/demo-list.component';
 import { FormsModule } from '@angular/forms';
+import { StripeClientComponent } from './stripe-client/stripe-client.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DemoListComponent
+    DemoListComponent,
+    StripeClientComponent
   ],
   imports: [
     BrowserModule,
