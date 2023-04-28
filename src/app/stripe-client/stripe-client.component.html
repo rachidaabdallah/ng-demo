@@ -1,0 +1,53 @@
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <div class="col-sm-6 offset h-100">
+      <div class="row title">Simulate reader pairing</div>
+      <div class="row margin pad">
+        <button id="discover-button">
+          1. Discover readers
+          <svg aria-hidden="true" height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.293 2.709A1 1 0 0 1 6.71 1.293l6.3 6.3a1 1 0 0 1 0 1.414l-6.3 6.3a1 1 0 0 1-1.416-1.416L10.884 8.3z" fill-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="row margin pad">
+        <button id="connect-button">
+          2. Connect to a reader
+          <svg aria-hidden="true" height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.293 2.709A1 1 0 0 1 6.71 1.293l6.3 6.3a1 1 0 0 1 0 1.414l-6.3 6.3a1 1 0 0 1-1.416-1.416L10.884 8.3z" fill-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <hr/>
+      <div class="row title">Simulate a transaction</div>
+      <div class="row margin pad text">Enter an amount</div>
+      <div class="row pad">
+        <div class="">
+          <input id="amount-input" type="text" value="2000">
+        </div>
+      </div>
+      <div class="row margin pad">
+        <button id="collect-button">
+          3. Collect Payment
+          <svg aria-hidden="true" height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.293 2.709A1 1 0 0 1 6.71 1.293l6.3 6.3a1 1 0 0 1 0 1.414l-6.3 6.3a1 1 0 0 1-1.416-1.416L10.884 8.3z" fill-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="row margin pad">
+        <button id="capture-button">
+          4. Capture Payment
+          <svg aria-hidden="true" height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.293 2.709A1 1 0 0 1 6.71 1.293l6.3 6.3a1 1 0 0 1 0 1.414l-6.3 6.3a1 1 0 0 1-1.416-1.416L10.884 8.3z" fill-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="col-sm-6 h-100 log-col">
+      <div class="row title">Logs</div>
+      <div class="row">
+        <div class="col-sm-12" id="logs"></div>
+      </div>
+    </div>
+  </div>
+</div>

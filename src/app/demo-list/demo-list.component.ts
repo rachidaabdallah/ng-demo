@@ -13,9 +13,9 @@ payement_testing: any = null;
 
   constructor() { }
   /*------------------------------------------
-  
+
     ngOnInit() Function
-    
+
     --------------------------------------------*/
 
   ngOnInit() {
@@ -31,6 +31,11 @@ payement_testing: any = null;
   --------------------------------------------*/
 
   makePayment(montant: any) {
+
+    // ici tu appel le terminal (de manière async)
+    // tu attends le retour du terminal
+    // si NOK !> renvoie une erreur
+    // si OK (le mec a validé avec sa CB + son code) => code ci-dessous
 
     const payement_testing = (<any>window).StripeCheckout.configure({
 
@@ -61,7 +66,7 @@ payement_testing: any = null;
   /*------------------------------------------
 
  invokeStripe() Function
- 
+
  --------------------------------------------*/
 
   invokeStripe() {
@@ -111,7 +116,7 @@ payement_testing: any = null;
       { id: 'cinq', name: 'test 5'}
 
       ]
-  } 
+  }
 interface DataObj {
   id: string;
   name: string;
